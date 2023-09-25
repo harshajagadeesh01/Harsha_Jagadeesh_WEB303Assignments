@@ -1,46 +1,32 @@
-// WEB303 Assignment 2
-
-
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
     // Function to load content into the #content div using AJAX
     function loadContent(filename) {
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", filename, true);
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    var contentDiv = document.getElementById("content");
-
-                    // Animate the content div with a fade-out effect
-                    contentDiv.style.opacity = "0";
-                    
-                    setTimeout(function () {
-                        // Set the new content and animate with a fade-in effect
-                        contentDiv.innerHTML = xhr.responseText;
-                        contentDiv.style.opacity = "1";
-                    }, 300);
-                } else {
-                    alert("Error loading content.");
-                }
+        $.ajax({
+            type: "GET",
+            url: filename,
+            dataType: "html",
+            success: function (data) {
+                // Load the content into #content div
+                $("#content").html(data);
+            },
+            error: function () {
+                alert("Error loading content.");
             }
-        };
-
-        xhr.send();
+        });
     }
 
-    // Event listeners for the links
-    document.getElementById("prospect").addEventListener("click", function (e) {
+    // Event handlers for the links
+    $("#prospect").on("click", function (e) {
         e.preventDefault();
         loadContent("prospect.html");
     });
 
-    document.getElementById("convert").addEventListener("click", function (e) {
+    $("#convert").on("click", function (e) {
         e.preventDefault();
         loadContent("convert.html");
     });
 
-    document.getElementById("retain").addEventListener("click", function (e) {
+    $("#retain").on("click", function (e) {
         e.preventDefault();
         loadContent("retain.html");
     });
