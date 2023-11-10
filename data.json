@@ -1,0 +1,15 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "date": "1990-05-15",
+    // Add other fields as needed
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "date": "1985-12-10",
+    // Add other fields as needed
+  },
+  // Add more characters with at least 5 pieces of information
+]
