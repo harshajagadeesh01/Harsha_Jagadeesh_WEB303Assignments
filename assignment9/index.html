@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Shalil - Game of Thrones</h1>
+
+    <div>
+        <label for="search">Search by First Name:</label>
+        <input type="text" id="search" oninput="searchCharacter()">
+    </div>
+
+    <table id="characters-table">
+        <thead>
+            <tr>
+                <th data-field="firstName">First Name</th>
+                <th data-field="lastName">Last Name</th>
+                <th data-field="region">Region</th>
+                <th data-field="age">Age</th>
+                <th data-field="date">Date</th>
+            </tr>
+        </thead>
+        <tbody id="characters-data">
+
+        </tbody>
+    </table>
+
+    <div>
+        <button onclick="filterByLastName('A', 'M')">A - M (<span id="countAM">0</span>)</button>
+        <button onclick="filterByLastName('N', 'Z')">N - Z (<span id="countNZ">0</span>)</button>
+    </div>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
