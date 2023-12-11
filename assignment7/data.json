@@ -1,0 +1,51 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Snow",
+        "region": "Winterfell",
+        "age": 35,
+        "date": "2008-11-12"
+    },
+    {
+        "firstName": "Sansa",
+        "lastName": "Stark",
+        "region": "Winterfell",
+        "age": 25,
+        "date": "2009-05-15"
+    },
+    {
+        "firstName": "Cersei",
+        "lastName": "Lannister",
+        "age": 40,
+        "region": "Kings Landing",
+        "date": "2008-04-02"
+    },
+    {
+        "firstName": "Daenerys",
+        "lastName": "Targaryen",
+        "age": 38,
+        "region": "Dragonstone",
+        "date": "2010-06-15"
+    },
+    {
+        "firstName": "Tywin",
+        "lastName": "Lannister",
+        "age": 35,
+        "region": "Kings Landing",
+        "date": "2008-03-14"
+    },
+    {
+        "firstName": "Jaime",
+        "lastName": "Lannister",
+        "age": 40,
+        "region": "Kings Landing",
+        "date": "2008-04-01"
+    },
+    {
+        "firstName": "Arya",
+        "lastName": "Stark",
+        "age": 20,
+        "region": "Winterfell",
+        "date": "2008-04-19"
+    }
+]
